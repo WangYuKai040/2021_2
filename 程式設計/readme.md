@@ -1,3 +1,4 @@
+https://books.google.com.tw/books?id=Kki5DwAAQBAJ&pg=SL1-PA58&lpg=SL1-PA58&dq=gotop+java12&source=bl&ots=ECiz7pY7KI&sig=ACfU3U0ZAs2UL-6UR8f6c3XDuHM06gIw6g&hl=zh-TW&sa=X&ved=2ahUKEwi3t_zJwITvAhVFyosBHbaIAgYQ6AEwCXoECAcQAw#v=onepage&q=gotop%20java12&f=false
 # java oracle 
 https://www.oracle.com/tw/java/technologies/javase-downloads.html
 # Java Online (JDK 1.8.0)
