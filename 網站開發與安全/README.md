@@ -1,6 +1,5 @@
-# 2021_2
-### XAMPP
+# XAMPP
 https://www.apachefriends.org/zh_tw/download.html
-### Notepad++
+# Notepad++
 https://notepad-plus-plus.org/downloads/v7.9.3/
 
