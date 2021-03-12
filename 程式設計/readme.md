@@ -1,11 +1,3 @@
-https://books.google.com.tw/books?id=Kki5DwAAQBAJ&pg=SL1-PA58&lpg=SL1-PA58&dq=gotop+java12&source=bl&ots=ECiz7pY7KI&sig=ACfU3U0ZAs2UL-6UR8f6c3XDuHM06gIw6g&hl=zh-TW&sa=X&ved=2ahUKEwi3t_zJwITvAhVFyosBHbaIAgYQ6AEwCXoECAcQAw#v=onepage&q=gotop%20java12&f=false
-
-https://www.itread01.com/content/1549189995.html
-# java oracle 
-https://www.oracle.com/tw/java/technologies/javase-downloads.html
-# Java Online (JDK 1.8.0)
-https://www.tutorialspoint.com/compile_java_online.php
-
 # 遞增和遞減運算子
 ```
 int x=3,y;
@@ -19,4 +11,55 @@ y=4
 y= x++;
 y=4
 x=3
+```
+# Fibonacci數列
+```
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Write a program to find first 20 numbers of Fibonacci Series
+		 * 0 1 1 2 3 5 8 13 21
+		 */
+		int num1 = 0;
+		int num2 = 1;
+		int num3 = 0;
+		
+		System.out.println(num1);
+		System.out.println(num2);
+		
+		for(int i = 1; i <= 18; i++) {
+			num3 = num1 + num2;
+			System.out.println(num3);
+			num1 = num2;
+			num2 = num3;
+		}
+		
+
+	}
+
+}
+```
+```
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
 ```
