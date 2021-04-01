@@ -46,6 +46,7 @@ public class EX_4StarKiJiang {
 		for (int i = 0; i < lot.length; i++)
 			System.out.print("  " + lot[i]);
 	}
+}
 ```
 ```
 使用產生1-100的亂數
