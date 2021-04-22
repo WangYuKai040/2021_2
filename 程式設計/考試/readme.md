@@ -50,6 +50,9 @@ public class Angle {
 
 }
 ```
+```
+angle * (Math.PI / 180)
+```
 # 問答題
 ```
 [1]舉例說明　傳值呼叫(call by value)　與　參考呼叫(call by reference)
@@ -102,7 +105,7 @@ public class EX_4StarKiJiang {
 # n!:遞迴方法 vs iterative
 ## iterative
 ```
-ublic class Method1 {
+public class Method1 {
 	public static void main(String[] args) {
 		factorial(6);
 		factorial(9);
@@ -144,7 +147,6 @@ static void factorial(int x) {
 (1)請使用靜態遞迴方法算出費氏數列。
 (2)請使用 iterative方法算出費氏數列。
 ```
-
 ```
 
 
