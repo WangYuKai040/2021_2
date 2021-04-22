@@ -34,6 +34,9 @@ public class Main {
    會正確執行
 [D]以上都會正確執行
 ```
+```
+[C]
+```
 # 填充題
 ```
 public class Angle {
