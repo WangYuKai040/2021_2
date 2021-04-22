@@ -151,6 +151,36 @@ static void factorial(int x) {
 (2)請使用 iterative方法算出費氏數列。
 ```
 ```
+public class MainClass {
+    public static void main(String[] args) {
+        for (int counter = 0; counter <= 10; counter++){
+            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci(counter));
+        }
+    }
+ 
+    public static long fibonacci(long number) {
+        if ((number == 0) || (number == 1))
+            return number;
+        else
+            return fibonacci(number - 1) + fibonacci(number - 2);
+    }
+}
 
-
+```
+```
+public class Iterative {
+    public static long Fibonacci(int n)
+    {
+        long v1 = 0;
+        long v2 = 1;
+        long result = n;
+        for (int i = 2; i <= n; ++i)
+        {
+            result = v2 + v1;
+            v1 = v2;
+            v2 = result;
+        }
+        return result;
+    }
+}
 ```
