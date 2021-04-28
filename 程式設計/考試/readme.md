@@ -58,8 +58,7 @@ angle * (Math.PI / 180)
 ```
 # 問答題
 ```
-[1]舉例說明　
-傳值呼叫(call by value)與　參考呼叫(call by reference)
+[1]舉例說明　傳值呼叫(call by value)與　參考呼叫(call by reference)
 ```
 傳值呼叫(call by value)
 ```
@@ -139,6 +138,7 @@ public class AddNum {
 9  7  1  8  
 ```
 ```
+```
 public class EX_4StarKiJiang {
 
 	// getRnd靜態方法可用來取得n~m之間的num個亂數，並傳給所設定的陣列
@@ -178,6 +178,8 @@ public class EX_4StarKiJiang {
 ```
 # n!:遞迴方法 vs iterative
 ## iterative
+```
+```
 ```
 public class Method1 {
 	public static void main(String[] args) {
@@ -236,7 +238,6 @@ public class MainClass {
             return fibonacci(number - 1) + fibonacci(number - 2);
     }
 }
-
 ```
 ```
 public class Iterative {
