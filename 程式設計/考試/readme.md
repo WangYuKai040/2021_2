@@ -58,9 +58,13 @@ angle * (Math.PI / 180)
 ```
 # 問答題
 ```
-[1]舉例說明　傳值呼叫(call by value)　與　參考呼叫(call by reference)
+[1]舉例說明　
+傳值呼叫(call by value)與　參考呼叫(call by reference)
 ```
-public class ex05 {
+傳值呼叫(call by value)
+```
+package ex05;
+public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
 		System.out.println(" 傳值呼叫前\ta=" + a + "\tb=" + b );
@@ -77,7 +81,56 @@ public class ex05 {
 	}
 }
 ```
+參考呼叫(call by reference)
+```
+package ex05;
+
+class Obj {
+	int a, b;
+
+	Obj() {
+		a = 10;
+		b = 15;
+	}
+}
+
+public class CallByRef {
+	public static void main(String[] args) {
+		Obj obj = new Obj();
+		System.out.println(" 參考呼叫前\t a = " + obj.a + "\tb = " + obj.b);
+		byRef(obj);
+		System.out.println(" 參考呼叫後\t a = " + obj.a + "\tb = " + obj.b);
+	}
+
+	static void byRef(Obj p) {
+		int t;
+		t = p.a;
+		p.a = p.b;
+		p.b = t;
+	}
+}
+```
 [2]舉例說明　方法多載
+```
+package ex05;
+
+public class AddNum {
+	public static void main(String[] args) {
+		int total1, x=17, y=28;
+		double total2, i=3.8, j=22.7, k=15.1;
+		total1 = add(x, y);
+		total2 = add(i, j, k);
+		System.out.printf("%d%n",total1);
+		System.out.printf("%f%n",total2);
+	}
+	static int add(int a, int b) {
+		return a + b; // 傳回兩個整數相加的結果
+	}
+	static double add(double a, double b, double c) {
+		return a + b + c; // 傳回三個倍精確度相加的結果
+	}
+}
+```
 ```
 # 程式設計題 四星彩開獎系統
 ```
