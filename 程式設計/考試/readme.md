@@ -179,8 +179,6 @@ public class EX_4StarKiJiang {
 # n!:遞迴方法 vs iterative
 ## iterative
 ```
-```
-```
 public class Method1 {
 	public static void main(String[] args) {
 		factorial(6);
