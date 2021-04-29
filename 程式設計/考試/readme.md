@@ -66,13 +66,15 @@ cos=0.5000000000000001
 [1]舉例說明　傳值呼叫(call by value)與　參考呼叫(call by reference)
 ```
 傳值呼叫(call by value)
+虛引數宣告為基本資料型別，基本資料型別的變數存放在Stack堆疊儲存空間，
+方法若採傳直呼叫，則呼叫敘述的實引數與被呼叫的虛引數是分別佔用不同記憶體，因此，使用傳直呼叫可以防止變數被方法更改。
 ```
 package ex05;
 public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
-		System.out.println(" 傳值呼叫前\ta=" + a + "\tb=" + b ); //顯示傳直呼叫前的變數值: a=10、b=15
-		byVal(a, b); //呼叫byVal()方法時，將實引數a及b以傳值方式傳遞給x和y，並執行第9~15行程式
+		System.out.println(" 傳值呼叫前\ta=" + a + "\tb=" + b ); 
+		byVal(a, b); 
 		System.out.println(" 傳值呼叫後\ta=" + a + "\tb=" + b ); 
 	}
 
@@ -87,9 +89,9 @@ public class CallByVal {
 ```
 ```
 D:\E040>java CallByVal.java
- 傳值呼叫前     a=10    b=15
- 傳值呼叫中     x=15    y=10
- 傳值呼叫後     a=10    b=15
+ 傳值呼叫前     a=10    b=15 //傳直呼叫前的變數值
+ 傳值呼叫中     x=15    y=10 //實引數與虛引數分別占用不同的記憶體位址，所以若虛引數互相對調其內容並不會引響到實引數
+ 傳值呼叫後     a=10    b=15 //傳值呼叫後的結果，因為佔不同記憶體所以a仍為10、b為15
 ```
 參考呼叫(call by reference)
 ```
