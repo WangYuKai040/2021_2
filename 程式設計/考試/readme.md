@@ -126,6 +126,18 @@ public class CallByRef {
 ```
 [2]舉例說明　方法多載
 ```
+方法多載或稱為超載、覆載，就是在同一個類別中，允許方法使用相同的名稱，但是後面所接的引數串列必須是資料型別不同、個數或順序不同。
+```
+```
+void methed(){}
+int methed(){}
+void methed(int a){}
+void methed(int b){}
+void methed(String s){}
+void methed(int a,String s){}
+void methed(String s,int a){}
+```
+```
 package ex05;
 
 public class AddNum {
