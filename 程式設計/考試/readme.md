@@ -56,6 +56,11 @@ public class Angle {
 ```
 angle * (Math.PI / 180)
 ```
+```
+D:\E040>java Angle.java
+sin=0.8660254037844386
+cos=0.5000000000000001
+```
 # 問答題
 ```
 [1]舉例說明　傳值呼叫(call by value)與　參考呼叫(call by reference)
