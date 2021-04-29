@@ -188,6 +188,12 @@ public class EX_4StarKiJiang {
 		for (int i = 0; i < lot.length; i++)
 			System.out.print("  " + lot[i]);
 	}
+}
+```
+```
+D:\E040>java EX_4StarKiJiang.java
+本期四星彩開獎號碼如下：
+  1  5  4  8
 ```
 ```
 使用產生1-100的亂數
@@ -209,6 +215,12 @@ public class Method1 {
 			j *= i--;
 		System.out.println(x + "! = " + j);
 	}
+}
+```
+```
+D:\1>java Method1.java
+6! = 720
+9! = 362880
 ```
 ## 遞迴方法
 ```
