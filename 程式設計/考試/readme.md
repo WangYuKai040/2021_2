@@ -239,13 +239,11 @@ public class MainClass {
 ```
 ```
 public class Iterative {
-    public static long Fibonacci(int n)
-    {
+    public static long Fibonacci(int n){
         long v1 = 0;
         long v2 = 1;
         long result = n;
-        for (int i = 2; i <= n; ++i)
-        {
+        for (int i = 2; i <= n; ++i){
             result = v2 + v1;
             v1 = v2;
             v2 = result;
