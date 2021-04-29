@@ -243,6 +243,7 @@ public class MainClass {
 }
 ```
 ```
+D:\E040>java MainClass.java
 Fibonacci of 0 is: 0
 Fibonacci of 1 is: 1
 Fibonacci of 2 is: 1
@@ -256,17 +257,31 @@ Fibonacci of 9 is: 34
 Fibonacci of 10 is: 55
 ```
 ```
-public class Iterative {
-    public static long Fibonacci(int n){
-        long v1 = 0;
-        long v2 = 1;
-        long result = n;
-        for (int i = 2; i <= n; ++i){
-            result = v2 + v1;
-            v1 = v2;
-            v2 = result;
+import java.util.*;
+
+public class Fibonacci {
+    private List<Integer> fib = new ArrayList<>();
+    {
+        fib.add(0);
+        fib.add(1);
+    }
+    
+    Integer get(int n) {
+        if(n >= fib.size()) for(int i = fib.size(); i <= n; i++) {
+            fib.add(fib.get(i - 1) + fib.get(i - 2));
         }
-        return result;
+        return fib.get(n);
+    }
+    
+    public static void main(String[] args) {
+        Fibonacci fibonacci = new Fibonacci();
+        for(int i = 0; i < 20; i++) {
+            System.out.print(fibonacci.get(i) + " ");
+        }
     }
 }
+```
+```
+D:\E040>java Fibonacci.java
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
 ```
