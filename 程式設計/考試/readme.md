@@ -157,8 +157,6 @@ D:\E040>java AddNum.java
 本期四星彩開獎號碼如下：
 9  7  1  8  
 ```
-```
-```
 public class EX_4StarKiJiang {
 
 	// getRnd靜態方法可用來取得n~m之間的num個亂數，並傳給所設定的陣列
