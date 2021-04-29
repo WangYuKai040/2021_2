@@ -277,6 +277,7 @@ static void factorial(int x) {
 (1)請使用靜態遞迴方法算出費氏數列。
 (2)請使用 iterative方法算出費氏數列。
 ```
+(1)請使用靜態遞迴方法算出費氏數列。
 ```
 public class MainClass {
     public static void main(String[] args) {
@@ -307,6 +308,7 @@ Fibonacci of 8 is: 21
 Fibonacci of 9 is: 34
 Fibonacci of 10 is: 55
 ```
+(2)請使用 iterative方法算出費氏數列。
 ```
 import java.util.*;
 
