@@ -71,7 +71,7 @@ public class CallByVal {
 		System.out.println(" 傳值呼叫後\ta=" + a + "\tb=" + b ); 
 	}
 
-	static void byVal(int x, int y) {
+	static void byVal(int x, int y) { //將實引數的內容傳給需引數
 		int t; //以變數t作為暫存區，將引數互換
 		t = x;
 		x = y;
