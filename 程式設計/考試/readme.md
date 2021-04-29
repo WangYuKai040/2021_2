@@ -66,9 +66,9 @@ package ex05;
 public class CallByVal {
 	public static void main(String[] args) {
 		int a = 10, b = 15;
-		System.out.println(" 傳值呼叫前\ta=" + a + "\tb=" + b );
-		byVal(a, b);
-		System.out.println(" 傳值呼叫後\ta=" + a + "\tb=" + b );
+		System.out.println(" 傳值呼叫前\ta=" + a + "\tb=" + b ); //顯示傳直呼叫前的變數值: a=10、b=15
+		byVal(a, b); //呼叫byVal()方法時，將實引數a及b以傳值方式傳遞給x和y，並執行第9~15行程式
+		System.out.println(" 傳值呼叫後\ta=" + a + "\tb=" + b ); 
 	}
 
 	static void byVal(int x, int y) {
@@ -79,6 +79,11 @@ public class CallByVal {
 		System.out.println(" 傳值呼叫中\tx=" + x + "\ty=" + y );
 	}
 }
+```
+```
+結果	傳直呼叫前 a=10 b=15
+	  傳直呼叫中 x=15 y=10
+	  傳直呼叫後 a=10 b=15
 ```
 參考呼叫(call by reference)
 ```
